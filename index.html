@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript Code Quiz</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+
+    <!-- Start & High Score Button -->
+    <div class="container">
+      <div id="home" class="flex-column flex-center">
+        <h1>JavaScript Code Quiz</h1>
+        <button class="btn">Start</button>
+        <button id="highscore-btn" class="btn">High Scores</button>
+      </div>
+    </div>
+
+    <!-- Quiz Box -->
+    <div class="container">
+      <div id="quiz-box" class="flex-column justify-center">
+        <header>
+          <div class="title">JavaScript Code Quiz</div>
+          <div class="timer">
+            <div class="time-left-txt">Time Left</div>
+            <div class="timer-sec">75</div>
+          </div>
+          <div class="time-line"></div>
+        </header>
+      
+        <section>
+          <div class="question"></div>
+          <div class="answer-list"></div>
+        </section>
+      
+        <footer>
+          <div class="total-questions"></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- Save Score -->
+    <div class="container">
+      <div id="save" class="flex-column flex-center">
+        <h1 id="finalScore">0</h1>
+        <form class="form-container">
+          <h2 id="end-text">Enter your initials below to save your score!</h2>
+          <input type="text" name="name" id="initials" placeholder="Enter your initials">
+          <button class="btn" id="saveScoreBtn" type="submit" onclick="saveHighScore(event)" disabled>Save</button>
+        </form>
+        <button class="btn">Play Again</button>
+        <button class="btn">Go Home</button>
+      </div>
+    </div>
+
+    <!-- Leaderboard -->
+    <div class="container">
+      <div id="highScores" class="flex-column flex-center">
+        <h1 class="finalScore">Leaderboard</h1>
+        <ul id="highScoreList"></ul>
+        <button class="btn">Go Home</button>
+      </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
