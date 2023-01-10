@@ -48,7 +48,7 @@ N/A
 This is a website that is a quiz for JavaScript fundamentals.
 ![Quiz-Demo-Home](./assets/demo/JavaScript-Quiz-Demo-1.jpg)
 ![Quiz-Demo-Question](./assets/demo/JavaScript-Quiz-Demo-2.jpg)
-![Quiz-Demo-Right]()./assets/demo/JavaScript-Quiz-Demo-3.jpg)
+![Quiz-Demo-Right](./assets/demo/JavaScript-Quiz-Demo-3.jpg)
 ![Quiz-Demo-Wrong](./assets/demo/JavaScript-Quiz-Demo-4.jpg)
 ![Quiz-Demo-Save](./assets/demo/JavaScript-Quiz-Demo-5.jpg)
 ![Quiz-Demo-Save](./assets/demo/JavaScript-Quiz-Demo-5.jpg)
