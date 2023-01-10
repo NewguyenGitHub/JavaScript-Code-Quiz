@@ -10,60 +10,45 @@
   <body>
 
     <!-- Start & High Score Button -->
-    <div class="container">
-      <div id="home" class="flex-column flex-center">
-        <h1>JavaScript Code Quiz</h1>
-        <button class="btn">Start</button>
-        <button id="highscore-btn" class="btn">High Scores</button>
-      </div>
+    <div class="start-screen">
+      <button id="start-button">Start</button>
+      <button id="highScores">High Scores</button>
     </div>
 
-    <!-- Quiz Box -->
-    <div class="container">
-      <div id="quiz-box" class="flex-column justify-center">
-        <header>
-          <div class="title">JavaScript Code Quiz</div>
-          <div class="timer">
-            <div class="time-left-txt">Time Left</div>
-            <div class="timer-sec">75</div>
-          </div>
-          <div class="time-line"></div>
-        </header>
-      
-        <section>
-          <div class="question"></div>
-          <div class="answer-list"></div>
-        </section>
-      
-        <footer>
-          <div class="total-questions"></div>
-        </footer>
+    <!-- Questions -->
+    <div id="display-container">
+      <div class="header">
+        <div class="number-of-count">
+          <span class="number-of-question">1 of 5 questions</span>
+        </div>
+        <div class="timer-div">
+          <span class="time-left">75s</span>
+        </div>
       </div>
+      <div id="container">
+        questions and options will be displayed here
+      </div>
+      <button id="next-button">Next</button>
     </div>
 
-    <!-- Save Score -->
-    <div class="container">
-      <div id="save" class="flex-column flex-center">
-        <h1 id="finalScore">0</h1>
-        <form class="form-container">
-          <h2 id="end-text">Enter your initials below to save your score!</h2>
-          <input type="text" name="name" id="initials" placeholder="Enter your initials">
-          <button class="btn" id="saveScoreBtn" type="submit" onclick="saveHighScore(event)" disabled>Save</button>
-        </form>
-        <button class="btn">Play Again</button>
-        <button class="btn">Go Home</button>
-      </div>
+    <!-- Save -->
+    <div class="score-container hide">
+      <div id="user-score">Demo Score</div>
+      <form class="form-container">
+        <input type="text" id="initials" name="name" placeholder="Enter your initials" required minLength="2">
+        <button id="save" type="submit">Save</button>
+      </form>
+      <button id="restart">Restart</button>
     </div>
 
-    <!-- Leaderboard -->
-    <div class="container">
-      <div id="highScores" class="flex-column flex-center">
-        <h1 class="finalScore">Leaderboard</h1>
-        <ul id="highScoreList"></ul>
-        <button class="btn">Go Home</button>
-      </div>
+    <!-- Leader Board -->
+    <div class="leader-board-container hide">
+      <div id="leader-board">Leader Board</div>
+      <ul class="highScoresList"></ul>
+      <button id="clear">Clear</button>
+      <button id="return-screen">Home</button>
     </div>
-
+    
     <script src="assets/js/script.js"></script>
   </body>
 </html>
