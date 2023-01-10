@@ -113,6 +113,13 @@ nextBtn.addEventListener(
         "Final Score: " + scoreCount;
     } 
     else if(count == 0) {
+      //hide question container and display score
+      displayContainer.classList.add("hide");
+      scoreContainer.classList.remove("hide");
+      
+      //user score
+      userScore.innerHTML =
+        "Final Score: " + scoreCount;
       return;
     }
     else {
